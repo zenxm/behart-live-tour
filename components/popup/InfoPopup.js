@@ -143,7 +143,7 @@ export default class InfoPopup extends React.Component {
                   return( 
                     <CardButtonRow key={i}>
                       {cardEntry.buttons.map((button, i) => {
-                        return <CardButton key={i} onClick={() => this.buttonClick(button.uri) }>{button.txt}</CardButton>;
+                        return <CardButton key={i} onClick={() => this.buttonClick(button.uri) textColor={cardEntry.textColor}}>{button.txt}</CardButton>;
                       })}
                     </CardButtonRow>
                   );
