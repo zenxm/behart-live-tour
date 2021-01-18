@@ -36,7 +36,7 @@ export default class InfoPopup extends React.Component {
 
     // Card style
 
-    stick: false, // If true, show always, also without hovering
+    stick: true, // If true, show always, also without hovering
     cardTranslateZ: -3.9, // Z distance of pop-up card [VR units]
     width: 3.0, // Card width
     backgroundColor: '#ffffffee', // Card background
