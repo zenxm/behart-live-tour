@@ -65,7 +65,8 @@ export default class InfoPopup extends React.Component {
       if (!supported) {
         console.log('Uri not supported: ', uri);
       } else {
-        return Linking.openURL(uri);
+        // return Linking.openURL(uri);
+          return window.open(uri, '_blank');
       }
     }).catch(err => console.error('Linking open URL failed', err));
   }
