@@ -61,14 +61,15 @@ export default class InfoPopup extends React.Component {
   }
 
   buttonClick(uri) {
-    Linking.canOpenURL(uri).then(supported => {
-      if (!supported) {
-        console.log('Uri not supported: ', uri);
-      } else {
-        // return Linking.openURL(uri);
-          return window.open(uri, '_blank');
-      }
-    }).catch(err => console.error('Linking open URL failed', err));
+      window.open(uri, '_blank');
+    // Linking.canOpenURL(uri).then(supported => {
+    //   if (!supported) {
+    //     console.log('Uri not supported: ', uri);
+    //   } else {
+    //     // return Linking.openURL(uri);
+    //       return window.open(uri, '_blank');
+    //   }
+    // }).catch(err => console.error('Linking open URL failed', err));
   }
 
   render() {
