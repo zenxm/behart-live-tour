@@ -116,7 +116,8 @@ export default class InfoPopup extends React.Component {
                       key={i} 
                       source={asset(cardEntry.src)} 
                       ratio={cardEntry.ratio} 
-                      width={this.props.width} 
+                      width={this.props.width}
+                      mute={this.props.mute}
                       borderWidth={ !isNaN(cardEntry.borderWidth) ? cardEntry.borderWidth : (this.props.video && this.props.video.borderWidth)}
                       ctrl={cardEntry.ctrl} 
                     />

@@ -17,7 +17,7 @@ export default class CardVideo extends React.Component {
   constructor(props) {
     super();
     this.state = {
-      playerState: new MediaPlayerState({autoPlay: true, muted: true}), // init with muted, autoPlay
+      playerState: new MediaPlayerState({autoPlay: true, muted: false}), // init with muted, autoPlay
     };
   }
 
