@@ -127,6 +127,7 @@ export default class InfoPopup extends React.Component {
                     <CardContent 
                       key={i} 
                       textColor={cardEntry.textColor || (this.props.content && this.props.content.textColor)} 
+                      fontStyle={cardEntry.fontStyle || (this.props.content && this.props.content.fontStyle)}
                       fontSize={cardEntry.fontSize || (this.props.content && this.props.content.fontSize)} >
                       {cardEntry.txt}
                     </CardContent>

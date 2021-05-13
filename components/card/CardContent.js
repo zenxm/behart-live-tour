@@ -29,6 +29,7 @@ export default class CardContent extends React.Component {
         marginLeft: 0.1,
         marginRight: 0.1,
         marginTop: 0,
+        fontStyle: this.props.fontStyle,
         marginBottom: 0.015,
       }}>
         {this.props.children}
